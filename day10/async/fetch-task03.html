@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/fetch-task03.css">
+  <title>화면에 이미지 불러오기</title>
+</head>
+<body>
+  <img src="" alt="">
+  <ul id="result"></ul>
+</body>
+<script>
+  const result = document.querySelector("#result")
+  // https://picsum.photos/v2/list?page=1&limit=10
+  const getPic = async() => {
+    const response = await fetch("https://picsum.photos/v2/list?page=1&limit=10")
+    const datas = await response.json()
+    const authors = datas.map((author) => author.author)
+    const imgData = datas.map((imgUrl) => imgUrl.download_url)
+    
+    
+    imgData.forEach((img) =>{
+      for(i = 0 ; i < imgData.length; i++){
+        console.log(imgData)
+      }
+    })
+
+
+
+
+    
+    // authors.forEach((author) => {
+    //   const li = document.createElement("li")
+    //   li.innerText = author
+    //   result.appendChild(li)
+    // })
+  }
+  getPic()
+</script>
+</html>
