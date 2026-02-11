@@ -19,15 +19,12 @@
   </ul>
 </body>
 <script>
-  const list = document.querySelectorAll(".list")
-  console.log(list)
-  // 태그 내용 중 콜라가 들어간 list만 글자 색상을 pink로 변경하기
   
-  list.forEach((item) => {
-    if(item.innerHTML.includes("콜라")) {
-      item.style.color = "pink";
-    }
+  const list = document.querySelectorAll(".list")
+  NodeList.prototype.filter = Array.prototype.filter
+  // 태그 내용 중 '콜라"가 들어간 list만 글자 색상을 pink로 변경하기
+  list.filter((li) => li.innerText.includes("콜라")).forEach((li) => {
+    li.style.color = "pink"
   })
-
 </script>
 </html>
