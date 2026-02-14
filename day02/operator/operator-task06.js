@@ -20,3 +20,4 @@ totalFee = productPrice + deliveryFee
 totalPrice = productPrice + deliveryFee
 result = `홍길동님의 구매 가격은 ${productPrice}원 이고,\n${memberMessage}이므로 배송비는 ${deliveryFee}원입니다.\n총 가격은: ${totalFee}원 입니다.`
 console.log(result)
+
