@@ -38,3 +38,4 @@ isOverFiveHours && (total *= 0.9)
 // 5. 최종 요금을 계산
 // 최종 주차 요금 출력하기
 console.log(total)
+
