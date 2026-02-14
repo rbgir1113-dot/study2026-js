@@ -43,3 +43,4 @@ let result5 = !number ? "숫자형이 아닙니다."
   : isFloat ? "실수" : "정수"
 
 console.log(result5)
+
