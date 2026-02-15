@@ -14,3 +14,4 @@ for(i=1;i<=10;i++){
 for(n=0; n<5; n++){
   console.log("홍길동")
 }
+
